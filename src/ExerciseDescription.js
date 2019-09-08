@@ -5,17 +5,26 @@ function ExerciseDescription() {
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
     <>
-      <h1>Kodiri > Beginner > Render > Exercise 1</h1>
+      <h1>Kodiri > Beginner > Render > Exercise 2</h1>
       <div>
         <button onClick={toggle}>
           {open ? 'Hide exercise details' : 'Open exercise details'}
         </button>
         {open && (
           <>
-            <h2>Get a welcome message</h2>
-            <p>Simply create a function to return the following message:</p>
-            <pre>Welcome to React</pre>
-            <p>Please note React is case sensitive :)</p>
+            <h2>Get a welcome message, in two paragraphs</h2>
+            <div style={{ textAlign: 'left' }}>
+              <p>Create a function to return the following message:</p>
+              <pre>Welcome to React</pre>
+              <p>
+                Please split the message into two separated paragraphs (using
+                the p tag):
+              </p>
+              <ul>
+                <li>Welcome</li>
+                <li>to React</li>
+              </ul>
+            </div>
             <iframe
               width="560"
               height="315"
@@ -28,7 +37,11 @@ function ExerciseDescription() {
               <p>
                 Edit <strong>Welcome.js</strong> to complete the exercise.
               </p>
-              <p>Switch to the "Tests" tab to check your results.</p>
+              <p>
+                Switch to the "Tests" tab to check your results. If you're
+                running this locally (not on codesandbox), you can instead use
+                the command npm test
+              </p>
               <p>
                 If you need help, ask another student or a teacher (in class or
                 in Slack).

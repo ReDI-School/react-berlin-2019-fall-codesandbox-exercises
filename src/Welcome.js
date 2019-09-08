@@ -1,8 +1,10 @@
-import React from "react";
+import React from 'react';
 
 function Welcome() {
   return (
-    <div></div>  
+    <div>
+      <p>Welcome</p>
+    </div>
   );
 }
 
