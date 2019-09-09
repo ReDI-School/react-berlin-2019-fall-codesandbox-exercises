@@ -29,7 +29,7 @@ function ExerciseDescription({
 
               <p>Requirements by example:</p>
               <pre>
-                const person = &#123; person: 'Andrea', score: 65 &#125;
+                const person = &#123; name: 'Andrea', score: 65 &#125;
                 <br />
                 &lt;Player person=&#123;person&#125; /&gt;
                 <br />
