@@ -4,6 +4,7 @@ function ExerciseDescription({
   level,
   topic,
   exerciseNumber,
+  title,
   exerciseComponentName,
 }) {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,7 @@ function ExerciseDescription({
       <h4>
         Kodiri > {level} > {topic} > Exercise {exerciseNumber}:
       </h4>
-      <h1>Dealing with classNames</h1>
+      <h1>{title}</h1>
       <div>
         <button onClick={toggle}>
           {open ? 'Hide exercise details' : 'Open exercise details'}
@@ -22,39 +23,36 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We're trying to define a new React component to display the
-                details of our last order:
+                We'd like to create a new component to display the match results
+                on the Premier League.
               </p>
+
+              <p>The structure of the component is:</p>
+
               <ul>
-                <li>Book Id</li>
-                <li>Title</li>
-                <li>Author</li>
+                <li>
+                  .fixtures
+                  <ul>
+                    <li>
+                      .fixture
+                      <ul>
+                        <li>.team1</li>
+                        <li>.team2</li>
+                        <li>.result</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
               </ul>
               <p>
-                A colleague started to work on it today, but he left early to
-                play table tennis.
+                Check the {exerciseComponentName}.spec.js file to see what text
+                needs to be put into each element.
               </p>
-              <p>Could you please complete it? Here are the requirements:</p>
-              <ul>
-                <li>
-                  An element (for example a div) should have the id{' '}
-                  <em>bookId</em> and contain the following text: <em>32156</em>
-                </li>
-                <li>
-                  An element (for example a div) should have the class{' '}
-                  <em>title</em> and contain the following text:{' '}
-                  <em>JavaScript: The Good Parts</em>
-                </li>
-                <li>
-                  A <em>author</em> element should contain the following text:{' '}
-                  <em>Douglas Crockford</em>
-                </li>
-              </ul>
             </div>
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/-LIR6KlLb0M"
+              src="https://www.youtube.com/embed/9nw_ewL7n9o"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen

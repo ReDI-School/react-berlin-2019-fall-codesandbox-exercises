@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import BookDetails from './BookDetails';
+import PremierLeagueFixtures from './PremierLeagueFixtures';
 
 import './styles.css';
 
@@ -13,13 +13,16 @@ function App() {
         <ExerciseDescription
           level="Beginner"
           topic="Render"
-          exerciseNumber="4"
-          exerciseComponentName="BookDetails"
+          exerciseNumber="5"
+          title="Dealing with nested selectors"
+          exerciseComponentName="PremierLeagueFixtures"
         />
       </div>
-      <h3>The React component in BookDetails.js is rendered below:</h3>
+      <h3>
+        The React component in PremierLeagueFixtures.js is rendered below:
+      </h3>
       <hr />
-      <BookDetails />
+      <PremierLeagueFixtures />
     </>
   );
 }
