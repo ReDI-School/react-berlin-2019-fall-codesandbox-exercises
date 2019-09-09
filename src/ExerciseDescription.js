@@ -23,27 +23,25 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We'd like to create a new component to display the match results
-                on the Premier League.
+                We want to create a Welcome component to say 'hello' to a given
+                user
               </p>
 
-              <p>The structure of the component is:</p>
+              <pre>
+                &lt;Welcome user='Peter' /&gt;
+                <br />
+                should become
+                <br />
+                &lt;div&gt;Welcome to React, Peter!&lt;/div&gt;
+                <br />
+                <br />
+                &lt;Welcome user='Laura' /&gt;
+                <br />
+                should become
+                <br />
+                &lt;div&gt;Welcome to React, Laura!&lt;/div&gt;
+              </pre>
 
-              <ul>
-                <li>
-                  .fixtures
-                  <ul>
-                    <li>
-                      .fixture
-                      <ul>
-                        <li>.team1</li>
-                        <li>.team2</li>
-                        <li>.result</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
               <p>
                 Check the {exerciseComponentName}.spec.js file to see what text
                 needs to be put into each element.
@@ -52,7 +50,7 @@ function ExerciseDescription({
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/9nw_ewL7n9o"
+              src="https://www.youtube.com/embed/Kfi_dSiYVGw"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
