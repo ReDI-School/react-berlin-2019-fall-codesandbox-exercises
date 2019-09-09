@@ -22,24 +22,24 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We want to introduce a new component ({exerciseComponentName})
-                to display some details about some legendary basketball players.
+                We're trying to define a new React component to display the
+                details of our last order:
               </p>
+              <ul>
+                <li>Book Id</li>
+                <li>Title</li>
+                <li>Author</li>
+              </ul>
               <p>
-                We'd like to add a className attribute to the first name and
-                last name props, for styling purposes.
+                A colleague started to work on it today, but he left early to
+                play table tennis.
               </p>
-              <p>
-                Resource:{' '}
-                <a href="https://reactjs.org/docs/faq-styling.html">
-                  Styling and CSS in React
-                </a>
-              </p>
+              <p>Could you please complete it?</p>
             </div>
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/KKwRbRt3HKE"
+              src="https://www.youtube.com/embed/LIR6KlLb0M"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen

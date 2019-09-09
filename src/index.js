@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import BasketballStar from './BasketballStar';
+import BookDetails from './BookDetails';
 
 import './styles.css';
 
@@ -13,13 +13,13 @@ function App() {
         <ExerciseDescription
           level="Beginner"
           topic="Render"
-          exerciseNumber="3"
-          sourceFile="BasketBall"
+          exerciseNumber="4"
+          exerciseComponentName="BookDetails"
         />
       </div>
-      <h3>The React component in BasketballStar.js is rendered below:</h3>
+      <h3>The React component in BookDetails.js is rendered below:</h3>
       <hr />
-      <BasketballStar />
+      <BookDetails />
     </>
   );
 }
