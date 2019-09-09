@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import President from './President';
 import ExerciseDescription from './ExerciseDescription';
-import PremierLeagueFixtures from './Welcome';
 
 import './styles.css';
 
@@ -13,14 +13,14 @@ function App() {
         <ExerciseDescription
           level="Beginner"
           topic="Props"
-          exerciseNumber="1"
-          title="Welcome a given user"
-          exerciseComponentName="Welcome"
+          exerciseNumber="2"
+          title="Display details of US presidents"
+          exerciseComponentName="President"
         />
       </div>
 
       <hr />
-      <PremierLeagueFixtures />
+      <President />
     </>
   );
 }

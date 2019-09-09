@@ -23,29 +23,47 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We want to create a Welcome component to say 'hello' to a given
-                user
+                We're creating a mobile app to display some basic information
+                about former presidents of the US.
               </p>
 
+              <p>Requirements by example:</p>
               <pre>
-                &lt;Welcome user='Peter' /&gt;
+                &lt;President firstName="Bill" lastName="Clinton" /&gt;
+                <br />
                 <br />
                 should become
                 <br />
-                &lt;div&gt;Welcome to React, Peter!&lt;/div&gt;
                 <br />
+                &lt;div&gt;
                 <br />
-                &lt;Welcome user='Laura' /&gt;
+                &nbsp;&nbsp;&lt;div class="firstName"&gt;First name:
+                Bill&lt;/div&gt;
                 <br />
-                should become
+                &nbsp;&nbsp;&lt;div class="lastName"&gt;Last name:
+                Clinton&lt;/div&gt;
                 <br />
-                &lt;div&gt;Welcome to React, Laura!&lt;/div&gt;
+                &lt;div&gt;
+                <br />
               </pre>
-
-              <p>
-                Check the {exerciseComponentName}.spec.js file to see what text
-                needs to be put into each element.
-              </p>
+              <pre>
+                &lt;President firstName="Barack" lastName="Obama" /&gt;
+                <br />
+                <br />
+                should become
+                <br />
+                <br />
+                &lt;div&gt;
+                <br />
+                &nbsp;&nbsp;&lt;div class="firstName"&gt;First name:
+                Barack&lt;/div&gt;
+                <br />
+                &nbsp;&nbsp;&lt;div class="lastName"&gt;Last name:
+                Obama&lt;/div&gt;
+                <br />
+                &lt;div&gt;
+                <br />
+              </pre>
             </div>
             <iframe
               width="560"
