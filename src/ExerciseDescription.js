@@ -53,9 +53,9 @@ function ExerciseDescription({
               width="560"
               height="315"
               src="https://www.youtube.com/embed/9nw_ewL7n9o"
-              frameborder="0"
+              frameBorder="0"
               allow="autoplay; encrypted-media"
-              allowfullscreen
+              allowFullScreen
             />
             <div style={{ textAlign: 'left' }}>
               <p>
