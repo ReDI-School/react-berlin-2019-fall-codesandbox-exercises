@@ -13,7 +13,7 @@ function ExerciseDescription({
       <h4>
         Kodiri > {level} > {topic} > Exercise {exerciseNumber}:
       </h4>
-      <h1>Dealing with classNames</h1>
+      <h1>Mixing selectors</h1>
       <div>
         <button onClick={toggle}>
           {open ? 'Hide exercise details' : 'Open exercise details'}
