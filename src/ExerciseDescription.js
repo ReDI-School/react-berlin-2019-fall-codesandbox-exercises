@@ -23,34 +23,58 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                By popular demand, we'd like to introduce a new view into the
-                platform to displaying the average score of a given user.
+                Please create a component to display basic details of a given
+                list of scores:
               </p>
-
-              <p>Requirements by example:</p>
+              <ul>
+                <li>Number of received scores</li>
+              </ul>
               <pre>
-                const person = &#123; person: 'Andrea', score: 65 &#125;
+                const scores = [54, 65];
                 <br />
-                &lt;Player person=&#123;person&#125; /&gt;
+                &lt;ScoreDetails scores=&#123;scores&#125; /&gt;
                 <br />
                 <br />
-                should become
+                <br />
+                ... becomes ...
                 <br />
                 <br />
                 &lt;div&gt;
                 <br />
-                &nbsp;&nbsp;&lt;p class=&quot;name&quot;&gt;Name:
-                Andrea&lt;/p&gt;
+                &nbsp;&nbsp;&lt;p class=&quot;total&quot;&gt;2&lt;/p&gt;
                 <br />
-                &nbsp;&nbsp;&lt;p class=&quot;score&quot;&gt;Score: 65&lt;/p&gt;
+                &nbsp;&nbsp;&lt;p class=&quot;first&quot;&gt;54&lt;/p&gt;
+                <br />
+                &nbsp;&nbsp;&lt;p class=&quot;second&quot;&gt;65&lt;/p&gt;
                 <br />
                 &lt;/div&gt;
+                <br />
+                <br />
+                <br />
+                const scores = [71, 85, 91];
+                <br />
+                &lt;ScoreDetails scores=&#123;scores&#125; /&gt;
+                <br />
+                <br />
+                ... becomes ...
+                <br />
+                <br />
+                &lt;div&gt;
+                <br />
+                &nbsp;&nbsp;&lt;p class=&quot;total&quot;&gt;3&lt;/p&gt;
+                <br />
+                &nbsp;&nbsp;&lt;p class=&quot;first&quot;&gt;71&lt;/p&gt;
+                <br />
+                &nbsp;&nbsp;&lt;p class=&quot;second&quot;&gt;85&lt;/p&gt;
+                <br />
+                &lt;/div&gt;
+                <br />
               </pre>
             </div>
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/9YTfNjYZb0Y"
+              src="https://www.youtube.com/embed/pKQwMjkVwXc"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen

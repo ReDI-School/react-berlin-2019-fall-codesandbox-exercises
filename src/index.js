@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Player from './Player';
 import ExerciseDescription from './ExerciseDescription';
+import ScoreDetails from './ScoreDetails';
 
 import './styles.css';
 
@@ -13,14 +13,14 @@ function App() {
         <ExerciseDescription
           level="Beginner"
           topic="Props"
-          exerciseNumber="3"
-          title="Show player details"
-          exerciseComponentName="Player"
+          exerciseNumber="4"
+          title="Analyse scores"
+          exerciseComponentName="ScoreDetails"
         />
       </div>
 
       <hr />
-      <Player />
+      <ScoreDetails />
     </>
   );
 }
