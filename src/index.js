@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <hr />
-      <Player />
+      <Player person={{ name: 'Dumbledore', age: 125 }} />
     </>
   );
 }
