@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import PremierLeagueFixtures from './Welcome';
+import Welcome from './Welcome';
 
 import './styles.css';
 
@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <hr />
-      <PremierLeagueFixtures />
+      <Welcome />
     </>
   );
 }
