@@ -34,12 +34,27 @@ function ExerciseDescription({
                 A colleague started to work on it today, but he left early to
                 play table tennis.
               </p>
-              <p>Could you please complete it?</p>
+              <p>Could you please complete it? Here are the requirements:</p>
+              <ul>
+                <li>
+                  An element (for example a div) should have the id{' '}
+                  <em>bookId</em> and contain the following text: <em>32156</em>
+                </li>
+                <li>
+                  An element (for example a div) should have the class{' '}
+                  <em>title</em> and contain the following text:{' '}
+                  <em>JavaScript: The Good Parts</em>
+                </li>
+                <li>
+                  A <em>author</em> element should contain the following text:{' '}
+                  <em>Douglas Crockford</em>
+                </li>
+              </ul>
             </div>
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/LIR6KlLb0M"
+              src="https://www.youtube.com/embed/-LIR6KlLb0M"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen
