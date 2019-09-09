@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <hr />
-      <ScoreDetails />
+      <ScoreDetails scores={[80, 50]} />
     </>
   );
 }
