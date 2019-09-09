@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import President from './President';
+import Player from './Player';
 import ExerciseDescription from './ExerciseDescription';
 
 import './styles.css';
@@ -13,14 +13,14 @@ function App() {
         <ExerciseDescription
           level="Beginner"
           topic="Props"
-          exerciseNumber="2"
-          title="Display details of US presidents"
-          exerciseComponentName="President"
+          exerciseNumber="3"
+          title="Show player details"
+          exerciseComponentName="Player"
         />
       </div>
 
       <hr />
-      <President />
+      <Player />
     </>
   );
 }

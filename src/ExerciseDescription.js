@@ -23,8 +23,8 @@ function ExerciseDescription({
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We're creating a mobile app to display some basic information
-                about former presidents of the US.
+                By popular demand, we'd like to introduce a new view into the
+                platform to displaying the average score of a given user.
               </p>
 
               <p>Requirements by example:</p>
@@ -68,7 +68,7 @@ function ExerciseDescription({
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/Kfi_dSiYVGw"
+              src="https://www.youtube.com/embed/9YTfNjYZb0Y"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
