@@ -14,7 +14,7 @@ function App() {
           level="Beginner"
           topic="Render"
           exerciseNumber="3"
-          sourceFile="BasketBall"
+          exerciseComponentName="BasketballStar"
         />
       </div>
       <h3>The React component in BasketballStar.js is rendered below:</h3>
