@@ -29,7 +29,9 @@ function ExerciseDescription({
 
               <p>Requirements by example:</p>
               <pre>
-                &lt;President firstName="Bill" lastName="Clinton" /&gt;
+                const person = &#123; person: 'Andrea', score: 65 &#125;
+                <br />
+                &lt;Player person=&#123;person&#125; /&gt;
                 <br />
                 <br />
                 should become
@@ -37,32 +39,12 @@ function ExerciseDescription({
                 <br />
                 &lt;div&gt;
                 <br />
-                &nbsp;&nbsp;&lt;div class="firstName"&gt;First name:
-                Bill&lt;/div&gt;
+                &nbsp;&nbsp;&lt;p class=&quot;name&quot;&gt;Name:
+                Andrea&lt;/p&gt;
                 <br />
-                &nbsp;&nbsp;&lt;div class="lastName"&gt;Last name:
-                Clinton&lt;/div&gt;
+                &nbsp;&nbsp;&lt;p class=&quot;score&quot;&gt;Score: 65&lt;/p&gt;
                 <br />
-                &lt;div&gt;
-                <br />
-              </pre>
-              <pre>
-                &lt;President firstName="Barack" lastName="Obama" /&gt;
-                <br />
-                <br />
-                should become
-                <br />
-                <br />
-                &lt;div&gt;
-                <br />
-                &nbsp;&nbsp;&lt;div class="firstName"&gt;First name:
-                Barack&lt;/div&gt;
-                <br />
-                &nbsp;&nbsp;&lt;div class="lastName"&gt;Last name:
-                Obama&lt;/div&gt;
-                <br />
-                &lt;div&gt;
-                <br />
+                &lt;/div&gt;
               </pre>
             </div>
             <iframe

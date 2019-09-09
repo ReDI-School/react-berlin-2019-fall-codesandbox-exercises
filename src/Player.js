@@ -1,7 +1,11 @@
 import React from 'react';
 
-function President(props) {
-  return <div></div>;
+function Player(props) {
+  return (
+    <div>
+      <p className="name">Name:</p>
+    </div>
+  );
 }
 
-export default President;
+export default Player;
