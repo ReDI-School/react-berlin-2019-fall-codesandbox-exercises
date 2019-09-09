@@ -68,7 +68,7 @@ function ExerciseDescription({
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/Kfi_dSiYVGw"
+              src="https://www.youtube.com/embed/FQqBN0uVP1s"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
