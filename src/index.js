@@ -2,26 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import BuyTickets from './BuyTickets';
+import ChallengeResults from './ChallengeResults';
 
 import './styles.css';
 
 function App() {
-  let user = { name: 'Anthony', age: 16 };
   return (
     <>
       <div className="App">
         <ExerciseDescription
           level="Beginner"
           topic="Conditional Rendering"
-          exerciseNumber="2"
-          title="Creating a ticketing system"
-          exerciseComponentName="BuyTickets"
+          exerciseNumber="3"
+          title="Evaluate challenge results"
+          exerciseComponentName="ChallengeResults"
         />
       </div>
 
       <hr />
-      <BuyTickets user={user} />
+      <ChallengeResults scores={[34, 54, 34, 23]} />
     </>
   );
 }

@@ -15,31 +15,41 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                We'd like to introduce a new online system to allow users buying tickets for their
-                favourite shows.
+                Please create a new component to determine how good the challenge results of a given
+                user are.
               </p>
-              <p>The only exception is: they should be at least 18 years old to proceed!</p>
+
+              <ul>
+                <li>
+                  If the average score is {`>= 50`}, display:{' '}
+                  <span className="highlight">Well done!</span>
+                </li>
+                <li>
+                  If the average score is {`< 50`}, display:{' '}
+                  <span className="highlight">Keep training!</span>
+                </li>
+              </ul>
 
               <pre>
                 <br />
-                {`<BuyTickets user={{name: 'Anthony', age: 16}} />`}
+                {`<ChallengeResults scores={[91, 71, 64, 79]} />`}
                 <br />
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>Sorry, try again once you turn 18</div>`}
+                {`<div>Well done!</div>`}
                 <br />
                 <br />
                 <br />
-                {`<BuyTickets user={{name: 'Anthony', age: 21}} />`}
+                {`<ChallengeResults scores={[34, 54, 34, 23]} />`}
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>Enjoy the show!</div>`}
+                {`<div>Keep training!</div>`}
                 <br />
               </pre>
             </div>
@@ -47,7 +57,7 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
               width="560"
               title="Youtube video"
               height="315"
-              src="https://www.youtube.com/embed/VyVfhlTlvdw"
+              src="https://www.youtube.com/embed/hRSaL0UA2j0"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
