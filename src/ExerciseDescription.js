@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComponentName }) {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
     <>
