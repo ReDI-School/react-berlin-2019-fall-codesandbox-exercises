@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
 function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComponentName }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
     <>
@@ -46,7 +46,7 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
               width="560"
               title="Youtube video"
               height="315"
-              src="https://youtu.be/L6uFGZG14Ms"
+              src="https://www.youtube.com/embed/L6uFGZG14Ms"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
