@@ -14,31 +14,40 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
         {open && (
           <>
             <div style={{ textAlign: 'left' }}>
-              <p>Please create a component to display the accumulated score of a given player.</p>
+              <p>
+                We'd like to display a welcome message to our customers, according to the following
+                criteria:
+              </p>
               <ul>
-                <li>Number of received scores</li>
+                <li>
+                  If the <span className="highlight">lastName</span> is provided -> display Welcome
+                  Mr <span className="highlight">lastName</span>
+                </li>
+                <li>
+                  If not -> display Welcome <span className="highlight">firstName</span>
+                </li>
               </ul>
 
               <pre>
                 <br />
-                {`<TotalScore scores={[34, 35, 36]} />`}
+                {`<Welcome firstName="Valentino" lastName="Rossi" />`}
                 <br />
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>The total score is: 105</div>`}
+                {`<div>Welcome Mr Rossi</div>`}
                 <br />
                 <br />
                 <br />
-                {`<TotalScore scores={[65, 75, 86]} />`}
+                {`<Welcome firstName="Carl" />`}
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>The total score is: 226</div>`}
+                {`<div>Welcome Carl</div>`}
                 <br />
               </pre>
             </div>
@@ -46,7 +55,7 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
               width="560"
               title="Youtube video"
               height="315"
-              src="https://www.youtube.com/embed/L6uFGZG14Ms"
+              src="https://www.youtube.com/embed/h2qYEEtagL8"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen

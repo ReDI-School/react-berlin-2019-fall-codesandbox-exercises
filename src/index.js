@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import TotalScore from './TotalScore';
+import Welcome from './Welcome';
 
 import './styles.css';
 
@@ -12,15 +12,15 @@ function App() {
       <div className="App">
         <ExerciseDescription
           level="Beginner"
-          topic="Props"
-          exerciseNumber="5"
-          title="Display the total score"
-          exerciseComponentName="TotalScore"
+          topic="Conditional Rendering"
+          exerciseNumber="1"
+          title="Welcome users"
+          exerciseComponentName="Welcome"
         />
       </div>
 
       <hr />
-      <TotalScore scores={[34, 35, 36]} />
+      <Welcome firstName="Valentino" lastName="Rossi" />
     </>
   );
 }
