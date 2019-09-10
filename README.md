@@ -20,6 +20,13 @@ Click the below links to load a specific branch from this repository into codesa
 - [Props 02: Display details of US presidents](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/props/02)
 - [Props 03: Show player details](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/props/03)
 - [Props 04: Analyse scores](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/props/04)
+- [Props 05: Display the total score](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/props/05)
+
+### Topic: Conditional rendering
+
+- [Conditional Rendering 01: Welcome users](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/01)
+- [Conditional Rendering 02: Creating a ticketing system](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/02)
+- [Conditional Rendering 03: Evaluate challenge results](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/03)
 
 ## Credits
 
