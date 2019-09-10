@@ -2,25 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ExerciseDescription from './ExerciseDescription';
-import Welcome from './Welcome';
+import BuyTickets from './BuyTickets';
 
 import './styles.css';
 
 function App() {
+  let user = { name: 'Anthony', age: 16 };
   return (
     <>
       <div className="App">
         <ExerciseDescription
           level="Beginner"
           topic="Conditional Rendering"
-          exerciseNumber="1"
-          title="Welcome users"
-          exerciseComponentName="Welcome"
+          exerciseNumber="2"
+          title="Creating a ticketing system"
+          exerciseComponentName="BuyTickets"
         />
       </div>
 
       <hr />
-      <Welcome firstName="Valentino" lastName="Rossi" />
+      <BuyTickets user={user} />
     </>
   );
 }
