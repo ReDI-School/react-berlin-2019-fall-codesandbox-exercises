@@ -1,6 +1,12 @@
 import React, { useState, useCallback } from 'react';
 
-function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComponentName }) {
+function ExerciseDescription({
+  level,
+  topic,
+  exerciseNumber,
+  title,
+  exerciseComponentName,
+}) {
   const [open, setOpen] = useState(false);
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
@@ -10,46 +16,41 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
       </h4>
       <h1>{title}</h1>
       <div>
-        <button onClick={toggle}>{open ? 'Hide exercise details' : 'Open exercise details'}</button>
+        <button onClick={toggle}>
+          {open ? 'Hide exercise details' : 'Open exercise details'}
+        </button>
         {open && (
           <>
             <div style={{ textAlign: 'left' }}>
               <p>
-                Please create a new component to determine how good the challenge results of a given
-                user are.
+                We'd like to evaluate how good a given film is depending on its
+                average score on the internet:
               </p>
 
               <ul>
-                <li>
-                  If the average score is {`>= 50`}, display:{' '}
-                  <span className="highlight">Well done!</span>
-                </li>
-                <li>
-                  If the average score is {`< 50`}, display:{' '}
-                  <span className="highlight">Keep training!</span>
-                </li>
+                <li>&lt;50: Poor</li>
+                <li>&gt;=50 && &lt; 75: Nice</li>
+                <li>&gt;=75: Excellent</li>
               </ul>
 
               <pre>
-                <br />
-                {`<ChallengeResults scores={[91, 71, 64, 79]} />`}
-                <br />
+                {`<FilmScore title="The Fountain" score={90} />`}
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>Well done!</div>`}
+                {`<div>Excellent</div>`}
                 <br />
                 <br />
                 <br />
-                {`<ChallengeResults scores={[34, 54, 34, 23]} />`}
+                {`<FilmScore title="Spaceballs" score={30} />`}
                 <br />
                 <br />
                 ... becomes ...
                 <br />
                 <br />
-                {`<div>Keep training!</div>`}
+                {`<div>Poor</div>`}
                 <br />
               </pre>
             </div>
@@ -57,24 +58,29 @@ function ExerciseDescription({ level, topic, exerciseNumber, title, exerciseComp
               width="560"
               title="Youtube video"
               height="315"
-              src="https://www.youtube.com/embed/hRSaL0UA2j0"
+              src="https://www.youtube.com/embed/IxgszwH098c"
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
             />
             <div style={{ textAlign: 'left' }}>
               <p>
-                Edit <strong>{exerciseComponentName}.js</strong> to complete the exercise.
+                Edit <strong>{exerciseComponentName}.js</strong> to complete the
+                exercise.
               </p>
               <p>
-                Switch to the "Tests" tab to check your results. If you're running this locally (not
-                on codesandbox), you can instead use the command npm test
+                Switch to the "Tests" tab to check your results. If you're
+                running this locally (not on codesandbox), you can instead use
+                the command npm test
               </p>
-              <p>If you need help, ask another student or a teacher (in class or in Slack).</p>
+              <p>
+                If you need help, ask another student or a teacher (in class or
+                in Slack).
+              </p>
               <p>
                 The tests are defined in {exerciseComponentName}.spec.js. You do{' '}
-                <strong>not need</strong> to understand in detail how unit tests work, but feel free
-                to look in the file if you're curious.
+                <strong>not need</strong> to understand in detail how unit tests
+                work, but feel free to look in the file if you're curious.
               </p>
             </div>
           </>
