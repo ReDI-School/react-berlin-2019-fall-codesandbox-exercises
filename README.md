@@ -27,6 +27,7 @@ Click the below links to load a specific branch from this repository into codesa
 - [Conditional Rendering 01: Welcome users](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/01)
 - [Conditional Rendering 02: Creating a ticketing system](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/02)
 - [Conditional Rendering 03: Evaluate challenge results](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/03)
+- [Conditional Rendering 04: How good a film is?](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/beginner/conditional-rendering/04)
 
 ## Credits
 
