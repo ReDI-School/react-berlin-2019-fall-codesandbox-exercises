@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import ExerciseDescription from "./ExerciseDescription";
-import Welcome from "./Welcome";
+import Actors from "./Actors";
 
 import "./styles.css";
 
@@ -13,7 +13,7 @@ function App() {
         <ExerciseDescription />
         <hr />
       </div>
-      <Welcome />
+      <Actors names={['Arnold', 'Silvester', 'Steven']}/>
     </>
   );
 }
