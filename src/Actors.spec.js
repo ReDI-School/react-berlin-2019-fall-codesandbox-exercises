@@ -6,32 +6,35 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-it('Actors displays a list of 3 actors', () => {
+it('Actors takes 3 actors and display their name and age', () => {
 
 	//given
 	const actors = shallow(
-		<Actors names={['Arnold', 'Silvester', 'Steven']} />
+		<Actors actors={[
+			{ name: 'Arnold', age: 71 }, { name: 'Silvester', age: 72 }
+		]} />
 	);
 
 	//when
 	let paragraphs = actors.find('p');
 
 	//then
-	expect(paragraphs).to.have.length(3);
-	expect(paragraphs.at(0).text()).to.equal('Arnold');
-	expect(paragraphs.at(1).text()).to.equal('Silvester');
-	expect(paragraphs.at(2).text()).to.equal('Steven');
+	expect(paragraphs).to.have.length(2);
+	expect(paragraphs.at(0).text()).to.equal('Arnold (71)');
+	expect(paragraphs.at(1).text()).to.equal('Silvester (72)');
 });
 
-it('Actors displays a list of 1 actor', () => {
+it('Actors takes 1 actor and display their name and age', () => {
 
 	//given
-	const actors = shallow(<Actors names={['Leonardo']} />);
+	const actors = shallow(
+		<Actors actors={[{ name: 'Steven', age: 66 }]} />
+	);
 
 	//when
 	let paragraphs = actors.find('p');
 
 	//then
 	expect(paragraphs).to.have.length(1);
-	expect(paragraphs.at(0).text()).to.equal('Leonardo');
-});
+	expect(paragraphs.at(0).text()).to.equal('Steven (66)');
+})
