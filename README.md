@@ -36,7 +36,7 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: Iterating through list of elements
 
-- [Loop 01: Display a list of actor names](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/01)
+- 01 (**To be created**)
 - 02 (**To be created**)
 - 03 (**To be created**)
 - 04 (**To be created**)
