@@ -5,29 +5,31 @@ function ExerciseDescription() {
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
     <>
-      <h1>Kodiri > Beginner > Loop > Exercise 4</h1>
+      <h1>Kodiri > Beginner > Loop > Exercise 5</h1>
       <div>
         <button onClick={toggle}>
           {open ? 'Hide exercise details' : 'Open exercise details'}
         </button>
         {open && (
           <>
-            <h2>Display the details of a given user</h2>
+            <h2>Reverse starting grid</h2>
             <p>
-              We are trying to display the details of a given user.
-              There's an issue, though. We don't know which properties are available each time!
+              Formula 1 is loosing spectators year after year.
+              To improve the show, the organisers are thinking about reversing
+              the given entry list of teams, so which ever was supposed to start
+              last will be promoted to the head of the queue, and vice-versa.
             </p>
             <iframe
               width="560"
               height="315"
-              src="https://youtu.be/XQYJ614ehIo"
+              src="https://www.youtube.com/embed/YIur7a2Q3HI"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen
             />
             <div style={{ textAlign: 'left' }}>
               <p>
-                Edit <strong>User.js</strong> to complete the exercise.
+                Edit <strong>StartingGrid.js</strong> to complete the exercise.
               </p>
               <p>Switch to the "Tests" tab to check your results.</p>
               <p>
@@ -35,7 +37,7 @@ function ExerciseDescription() {
                 in Slack).
               </p>
               <p>
-                The tests are defined in User.spec.js. You do{' '}
+                The tests are defined in StartingGrid.spec.js. You do{' '}
                 <strong>not need</strong> to understand in detail how unit tests
                 work, but feel free to look in the file if you're curious.
               </p>
