@@ -5,21 +5,19 @@ function ExerciseDescription() {
   const toggle = useCallback(() => setOpen(open => !open), []);
   return (
     <>
-      <h1>Kodiri > Beginner > Render > Exercise 1</h1>
+      <h1>Kodiri > Beginner > Loop > Exercise 1</h1>
       <div>
         <button onClick={toggle}>
           {open ? 'Hide exercise details' : 'Open exercise details'}
         </button>
         {open && (
           <>
-            <h2>Get a welcome message</h2>
-            <p>Simply create a function to return the following message:</p>
-            <pre>Welcome to React</pre>
-            <p>Please note React is case sensitive :)</p>
+            <h2>Display a list of actor names</h2>
+            <p>Simply display a list of actors :)</p>
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/lyDS7pZr5ZI"
+              src="https://youtu.be/zB91J6p3FSw"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen
