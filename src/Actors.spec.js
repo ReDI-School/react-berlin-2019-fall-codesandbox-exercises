@@ -6,12 +6,21 @@ import Adapter from "enzyme-adapter-react-16";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-it("Welcome displays a welcome message", () => {
-  //when
-  const welcome = shallow(<Actors />);
+it('Actors displays a list of 3 actors', () => {
 
-  //then
-  expect(welcome.text()).toBe("Welcome to React!");
+	//given
+	const actors = shallow(
+		<Actors names={['Arnold', 'Silvester', 'Steven']} />
+	);
+
+	//when
+	let paragraphs = actors.find('p');
+
+	//then
+	expect(paragraphs).to.have.length(3);
+	expect(paragraphs.at(0).text()).to.equal('Arnold');
+	expect(paragraphs.at(1).text()).to.equal('Silvester');
+	expect(paragraphs.at(2).text()).to.equal('Steven');
 });
 
 it('Actors displays a list of 1 actor', () => {
