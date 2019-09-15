@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import ExerciseDescription from "./ExerciseDescription";
-import Actors from "./Actors";
+import Actors from "./WorldChampions";
 
 import "./styles.css";
 
