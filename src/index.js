@@ -13,7 +13,7 @@ function App() {
         <ExerciseDescription />
         <hr />
       </div>
-      <Actors />
+      <Actors actors={[{ name: 'Arnold', age: 71 }, { name: 'Silvester', age: 72 }]}/>
     </>
   );
 }
