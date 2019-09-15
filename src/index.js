@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import ExerciseDescription from "./ExerciseDescription";
-import Actors from "./Actors";
+import Actors from "./WorldChampions";
 
 import "./styles.css";
 
@@ -13,7 +13,7 @@ function App() {
         <ExerciseDescription />
         <hr />
       </div>
-      <Actors />
+      <Actors drivers={[{ name: 'Nigel Mansell', isWorldChampion: true }, { name: 'Keke Rosbert', isWorldChampion: false }, { name: 'Alain Prost', isWorldChampion: true }]}/>
     </>
   );
 }
