@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import ExerciseDescription from "./ExerciseDescription";
-import Actors from "./WorldChampions";
+import Actors from "./User";
 
 import "./styles.css";
 
@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <div className="App">
-        <ExerciseDescription />
+        <ExerciseDescription  />
         <hr />
       </div>
-      <Actors />
+      <Actors user={{ name: 'Peter', age: 31 }}/>
     </>
   );
 }
