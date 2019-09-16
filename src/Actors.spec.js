@@ -17,10 +17,10 @@ it('Actors displays a list of 3 actors', () => {
 	let paragraphs = actors.find('p');
 
 	//then
-	expect(paragraphs).to.have.length(3);
-	expect(paragraphs.at(0).text()).to.equal('Arnold');
-	expect(paragraphs.at(1).text()).to.equal('Silvester');
-	expect(paragraphs.at(2).text()).to.equal('Steven');
+	expect(paragraphs).toHaveLength(3);
+	expect(paragraphs.at(0).text()).toBe('Arnold');
+	expect(paragraphs.at(1).text()).toBe('Silvester');
+	expect(paragraphs.at(2).text()).toBe('Steven');
 });
 
 it('Actors displays a list of 1 actor', () => {
@@ -32,6 +32,6 @@ it('Actors displays a list of 1 actor', () => {
 	let paragraphs = actors.find('p');
 
 	//then
-	expect(paragraphs).to.have.length(1);
-	expect(paragraphs.at(0).text()).to.equal('Leonardo');
+	expect(paragraphs).toHaveLength(1);
+	expect(paragraphs.at(0).text()).toBe('Leonardo');
 });
