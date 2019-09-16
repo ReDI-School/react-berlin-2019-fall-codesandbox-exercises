@@ -36,11 +36,11 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: Iterating through list of elements
 
-- 01 (**To be created**)
-- 02 (**To be created**)
-- 03 (**To be created**)
-- 04 (**To be created**)
-- 05 (**To be created**)
+- [Loop 01: Display a list of actor names](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/01)
+- [Loop 02: Display a list of actor details](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/02)
+- [Loop 03: Display a list of Formula 1 World Champions](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/03)
+- [Loop 04: Display the details of a given user](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/04)
+- [Loop 05: Reverse starting grid](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/loop/05)
 
 ### Topic: Input fields
 
