@@ -19,9 +19,9 @@ it('Actors takes 3 actors and display their name and age', () => {
 	let paragraphs = actors.find('p');
 
 	//then
-	expect(paragraphs).to.have.length(2);
-	expect(paragraphs.at(0).text()).to.equal('Arnold (71)');
-	expect(paragraphs.at(1).text()).to.equal('Silvester (72)');
+	expect(paragraphs).toHaveLength(2);
+	expect(paragraphs.at(0).text()).toBe('Arnold (71)');
+	expect(paragraphs.at(1).text()).toBe('Silvester (72)');
 });
 
 it('Actors takes 1 actor and display their name and age', () => {
@@ -35,6 +35,6 @@ it('Actors takes 1 actor and display their name and age', () => {
 	let paragraphs = actors.find('p');
 
 	//then
-	expect(paragraphs).to.have.length(1);
-	expect(paragraphs.at(0).text()).to.equal('Steven (66)');
+	expect(paragraphs).toHaveLength(1);
+	expect(paragraphs.at(0).text()).toBe('Steven (66)');
 })
