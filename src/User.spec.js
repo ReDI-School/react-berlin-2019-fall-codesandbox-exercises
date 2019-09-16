@@ -15,9 +15,9 @@ it('User displays name and age details', () => {
 	let details = user.find('.detail');
 
 	//then
-	expect(details).to.have.length(2);
-	expect(details.at(0).text()).to.equal('name: Peter');
-	expect(details.at(1).text()).to.equal('age: 31');
+	expect(details).toHaveLength(2);
+	expect(details.at(0).text()).toBe('name: Peter');
+	expect(details.at(1).text()).toBe('age: 31');
 });
 
 it('User displays firstName and lastName details', () => {
@@ -31,7 +31,7 @@ it('User displays firstName and lastName details', () => {
 	let details = user.find('.detail');
 
 	//then
-	expect(details).to.have.length(2);
-	expect(details.at(0).text()).to.equal('firstName: Ada');
-	expect(details.at(1).text()).to.equal('lastName: Lovelace');
+	expect(details).toHaveLength(2);
+	expect(details.at(0).text()).toBe('firstName: Ada');
+	expect(details.at(1).text()).toBe('lastName: Lovelace');
 });
