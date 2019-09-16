@@ -17,10 +17,10 @@ it('StartingGrid reverses a list of 3 teams', () => {
 	let positions = startingGrid.find('.position');
 
 	//then
-	expect(positions).to.have.length(3);
-	expect(positions.at(0).text()).to.equal('1. Williams');
-	expect(positions.at(1).text()).to.equal('2. McLaren');
-	expect(positions.at(2).text()).to.equal('3. Ferrari');
+	expect(positions).toHaveLength(3);
+	expect(positions.at(0).text()).toBe('1. Williams');
+	expect(positions.at(1).text()).toBe('2. McLaren');
+	expect(positions.at(2).text()).toBe('3. Ferrari');
 });
 
 it('StartingGrid reverses a list of 2 teams', () => {
@@ -34,7 +34,7 @@ it('StartingGrid reverses a list of 2 teams', () => {
 	let positions = startingGrid.find('.position');
 
 	//then
-	expect(positions).to.have.length(2);
-	expect(positions.at(0).text()).to.equal('1. Minardi');
-	expect(positions.at(1).text()).to.equal('2. Jordan');
+	expect(positions).toHaveLength(2);
+	expect(positions.at(0).text()).toBe('1. Minardi');
+	expect(positions.at(1).text()).toBe('2. Jordan');
 });;
