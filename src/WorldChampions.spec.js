@@ -19,9 +19,9 @@ it('WorldChampions filters out the non-champion drivers', () => {
 	let labels = worldChampions.find('label');
 
 	//then
-	expect(labels).to.have.length(2);
-	expect(labels.at(0).text()).to.equal('Nigel Mansell');
-	expect(labels.at(1).text()).to.equal('Alain Prost');
+	expect(labels).toHaveLength(2);
+	expect(labels.at(0).text()).toBe('Nigel Mansell');
+	expect(labels.at(1).text()).toBe('Alain Prost');
 });
 
 it(
@@ -37,5 +37,5 @@ it(
 		let labels = worldChampions.find('label');
 
 		//then
-		expect(labels).to.have.length(0);
+		expect(labels).toHaveLength(0);
 	});
