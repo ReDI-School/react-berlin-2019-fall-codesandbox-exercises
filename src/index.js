@@ -26,24 +26,21 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Display a basic input text"
-        youtubeId="52Prmi2WNzQ"
+        title="Display an input text with dynamic data"
+        youtubeId="HSMyTC3j0AI"
         exerciseFilename="Text"
         description={
-          <div>
-            We'd like to display a basic input text, including:
+          <p>
+            We're trying to create a dynamic input text component, by passing different properties to it each time:
             <div>A default value</div>
-            <div>
-              A placeholder (that is, the text we display when the input is
-              blank)
-            </div>
+            <div>A placeholder (that is, the text we display when the input is blank)</div>
             <div>💡💡 Tip: Dont forget to add the type of your input!</div>
-          </div>
+          </p>
         }
       />
 
       <Panel header={<PanelHeader/>} bordered>
-        <Text />
+        <Text value='donald@trump.com' placeholder='Enter your email' />
       </Panel>
     </>
   );

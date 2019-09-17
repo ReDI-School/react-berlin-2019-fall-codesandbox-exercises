@@ -11,7 +11,7 @@ function ExerciseDescription({
   return (
     <>
       <Panel
-        header={`Kodiri / Beginer / Input / Exercise 1`}
+        header={`Kodiri / Beginer / Input / ${title}`}
         collapsible
         bordered
       >
@@ -44,8 +44,7 @@ function ExerciseDescription({
   );
 }
 ExerciseDescription.propTypes = {
-  description: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-    .isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   exerciseFilename: PropTypes.string,
   title: PropTypes.string,
   youtubeId: PropTypes.string
