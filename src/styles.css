@@ -1,8 +1,8 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+* {
+  margin: 4px;
 }
-
-.Welcome {
-  margin: 0 2em;
+iframe {
+  width: 100%;
+  height: 50vh;
+  margin: 0;
 }
