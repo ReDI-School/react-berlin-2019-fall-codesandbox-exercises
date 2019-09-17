@@ -5,36 +5,40 @@ import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 Enzyme.configure({ adapter: new Adapter() });
 
-it('Text displays email details with a default value', () => {
+it('Textarea displays a multi-line input (user thoughts)', () => {
 
 	//given
 	const wrapper = shallow(
 		<Textarea
-			value='donald@trump.com'
-			placeholder='Enter your email' />
+			value='Over 300 languages are spoken in London'
+			placeholder='Please share your thoughts' />
 	);
 
 	//when
-	let input = wrapper.find('input[type="text"]');
+	let textarea = wrapper.find('textarea');
 
 	//then
-	expect(input.props().value).toBe('donald@trump.com');
-	expect(input.props().placeholder).toBe('Enter your email');
+	expect(textarea.props().value)
+		.to.equal('Over 300 languages are spoken in London');
+	expect(textarea.props().placeholder)
+		.to.equal('Please share your thoughts');
 });
 
-it('Text displays location details with a default value', () => {
+it('Textarea displays a multi-line input (race positions)', () => {
 
 	//given
 	const wrapper = shallow(
 		<Textarea
-			value='London'
-			placeholder='Enter your location' />
+			value='1. Ferrari, 2. McLaren, 3. Williams'
+			placeholder='Please enter the positions here' />
 	);
 
 	//when
-	let input = wrapper.find('input[type="text"]');
+	let textarea = wrapper.find('textarea');
 
 	//then
-	expect(input.props().value).toBe('London');
-	expect(input.props().placeholder).toBe('Enter your location');
-});
+	expect(textarea.props().value)
+		.to.equal('1. Ferrari, 2. McLaren, 3. Williams');
+	expect(textarea.props().placeholder)
+		.to.equal('Please enter the positions here');
+});;
