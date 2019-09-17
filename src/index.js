@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ExerciseDescription from "./ExerciseDescription";
-import Checkboxes from "./Checkboxes";
+import FruitPicker from "./FruitPicker";
 import { Panel, Tooltip, Whisper } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
 
@@ -26,23 +26,20 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Display checkboxes on a sign up form"
-        youtubeId="E1BCJklxh48"
-        exerciseFilename="Textarea"
+        title="Display a combo to select a piece of fruit"
+        youtubeId="QNnUXFDP70M"
+        exerciseFilename="FruitPicker"
         description={
           <p>
-            Let's talk about checkboxes!
+            As part of our new diet, our nutritionist has suggested us to eat more fruit, unsurprisingly. She's particularly interested on apples and oranges.
             <br/>
-            As part of our sign up form, we'd like to display, at the bottom, a couple of ticks to confirm whether the user:
-            <div>1) Accepts the terms and conditions.</div>
-            <div>2) Accepts to receive a monthly newsletter.</div>
-            <div>We'd like to customise the default values for these checkbox on each case.</div>
+            Let's display a dropdown to pick a piece of fruit, with the ability of showing a different default element each time.
           </p>
         }
       />
 
       <Panel header={<PanelHeader/>} bordered>
-        <Checkboxes terms={true} news={false} />
+        <FruitPicker selected='Apple' />
       </Panel>
     </>
   );
