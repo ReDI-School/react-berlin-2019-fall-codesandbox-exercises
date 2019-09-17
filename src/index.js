@@ -27,7 +27,7 @@ function App() {
     <>
       <ExerciseDescription
         title="Display a textarea with dynamic data"
-        youtubeId="HSMy6AvyvurdduAAI"
+        youtubeId="6AvyvurdduA"
         exerciseFilename="Textarea"
         description={
           <p>
