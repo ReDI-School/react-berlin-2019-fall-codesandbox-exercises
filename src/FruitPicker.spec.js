@@ -14,8 +14,8 @@ it('FruitPicker allows user to select Apple and Orange', () => {
 	let select = wrapper.find('select');
 
 	//then
-	expect(select.find('option').at(0).text()).to.equal('Apple');
-	expect(select.find('option').at(1).text()).to.equal('Orange');
+	expect(select.find('option').at(0).text()).toBe('Apple');
+	expect(select.find('option').at(1).text()).toBe('Orange');
 });
 
 it('FruitPicker can select Apple fruit by default', () => {
@@ -27,7 +27,7 @@ it('FruitPicker can select Apple fruit by default', () => {
 	let select = wrapper.find('select');
 
 	//then
-	expect(select.props().value).to.equal('Apple');
+	expect(select.props().value).toBe('Apple');
 });
 
 it('FruitPicker can select Banana fruit by default', () => {
@@ -39,5 +39,5 @@ it('FruitPicker can select Banana fruit by default', () => {
 	let select = wrapper.find('select');
 
 	//then
-	expect(select.props().value).to.equal('Orange');
+	expect(select.props().value).toBe('Orange');
 });
