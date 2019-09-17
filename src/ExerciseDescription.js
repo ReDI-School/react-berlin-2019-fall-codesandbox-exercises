@@ -11,7 +11,7 @@ function ExerciseDescription({
   return (
     <>
       <Panel
-        header={`Kodiri / Beginer / Input / Exercise 1`}
+        header={`Kodiri / Beginer / Input / ${title}`}
         collapsible
         bordered
       >
