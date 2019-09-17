@@ -9,7 +9,7 @@ import "./styles.css";
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">🏆</span> You are almost there! Great job!
+    <span role="img" aria-label="good job">🏆</span> LAST one you made it! Amazing work!
   </Tooltip>
 );
 
