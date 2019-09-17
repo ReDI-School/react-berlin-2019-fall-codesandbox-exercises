@@ -1,6 +1,6 @@
 import React from "react";
 
-function Textarea() {
+function Checkbox() {
 	return (
 		<div>
 
@@ -8,4 +8,4 @@ function Textarea() {
 	);
 }
 
-export default Textarea;
+export default Checkbox;
