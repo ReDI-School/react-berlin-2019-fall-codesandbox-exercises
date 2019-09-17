@@ -15,8 +15,8 @@ it('Checkboxes only marks the terms input', () => {
 	let newsInput = wrapper.find('input[type="checkbox"].news');
 
 	// //then
-	expect(termsInput.props().value).to.equal(true);
-	expect(newsInput.props().value).to.equal(false);
+	expect(termsInput.props().value).toBe(true);
+	expect(newsInput.props().value).toBe(false);
 });
 
 it('Checkboxes only marks the news input', () => {
@@ -29,6 +29,6 @@ it('Checkboxes only marks the news input', () => {
 	let newsInput = wrapper.find('input[type="checkbox"].news');
 
 	// //then
-	expect(termsInput.props().value).to.equal(false);
-	expect(newsInput.props().value).to.equal(true);
+	expect(termsInput.props().value).toBe(false);
+	expect(newsInput.props().value).toBe(true);
 });
