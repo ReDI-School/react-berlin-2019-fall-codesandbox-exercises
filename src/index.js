@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ExerciseDescription from "./ExerciseDescription";
-import Checkbox from "./Checkbox";
+import Checkboxes from "./Checkboxes";
 import { Panel, Tooltip, Whisper } from "rsuite";
 import "rsuite/dist/styles/rsuite-default.css";
 
@@ -42,7 +42,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader/>} bordered>
-        <Checkbox terms={true} news={false} />
+        <Checkboxes terms={true} news={false} />
       </Panel>
     </>
   );
