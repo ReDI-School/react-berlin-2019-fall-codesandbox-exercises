@@ -18,10 +18,8 @@ it('Textarea displays a multi-line input (user thoughts)', () => {
 	let textarea = wrapper.find('textarea');
 
 	//then
-	expect(textarea.props().value)
-		.to.equal('Over 300 languages are spoken in London');
-	expect(textarea.props().placeholder)
-		.to.equal('Please share your thoughts');
+	expect(textarea.props().value).toBe('Over 300 languages are spoken in London');
+	expect(textarea.props().placeholder).toBe('Please share your thoughts');
 });
 
 it('Textarea displays a multi-line input (race positions)', () => {
@@ -37,8 +35,6 @@ it('Textarea displays a multi-line input (race positions)', () => {
 	let textarea = wrapper.find('textarea');
 
 	//then
-	expect(textarea.props().value)
-		.to.equal('1. Ferrari, 2. McLaren, 3. Williams');
-	expect(textarea.props().placeholder)
-		.to.equal('Please enter the positions here');
+	expect(textarea.props().value).toBe('1. Ferrari, 2. McLaren, 3. Williams');
+	expect(textarea.props().placeholder).toBe('Please enter the positions here');
 });;
