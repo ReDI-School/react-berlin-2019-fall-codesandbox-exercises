@@ -44,11 +44,11 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: Input fields
 
-- 01 (**To be created**)
-- 02 (**To be created**)
-- 03 (**To be created**)
-- 04 (**To be created**)
-- 05 (**To be created**)
+- [Input 01: Display a basic input text](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/01)
+- [Input 02: Display an input text with dynamic data](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/02)
+- [Input 03: Display a textarea with dynamic data](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/03)
+- [Input 04: Display checkboxes on a sign up form](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/04)
+- [Input 05: Display a combo to select a piece of fruit](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/05)
 
 ## Level: Intermediate
 
@@ -131,23 +131,21 @@ Click the below links to load a specific branch from this repository into codesa
 1. Open Kodiri. Link to all beginner-level topics: https://kodiri.com/platform/training/reactjs/beginner (protip: replace `beginner` with `intermediate` or `expert` to access other levels)
 2. Open your topic, click Play or "Play test again". Just click "Skip" until you get to the exercise you want to copy. (there are five exercises per topic)
 3. Clone the exercises repo or fetch latest: https://github.com/ReDI-School/react-berlin-2019-fall-codesandbox-exercises.git
-4. Check out branch containing the last exercise/commit that was added to the repo. As of writing, it's `kodiri/beginner/conditional-rendering/04`
-5. Create new branch. If you're preparing beginner > topic: props > exercise: 05, then prepare a new branch as such: `git checkout -b kodiri/conditional-rendering/05`
-6. Copy, paste and adapt the following elements from Kodiri to the repo
-   1. The component name from Kodiri. If this is for example `Scores`, refactor every reference to `ScoreDetails` into `Score`. Make sure to update and double-check import statements, file names, etc.
-   2. The source code of the skeleton into the component file (e.g. `Score.js`)
-   3. The test source code into the unit test file (e.g. `Score.spec.js`). Make sure overwrite only from line #9 and down (i.e. keep the imports and setup on lines 1-8). Afterwards, run `npx jest-codemods` to transpile from one unit test format to another. As prompted, select: Which parser do you want to use? `Babel, Which test library would you like to migrate from? Chai: Should/Expect BDD Syntax, Which test library would you like to migrate from? Yes, and I'm not afraid of false positive transformations, Will you be using Jest on Node.js as your test runner? Yes, use the globals provided by Jest (recommended`). Hit Enter.
-7. Update the props passed to `ExerciseDescription` in `index.js`
-8. Update `ExerciseDescription`:
-
-   - copy instructions
-   - make sure to insert the correct youtube video id (i.e. `src="https://www.youtube.com/embed/pKQwMjkVwXc"` ==> `src="https://www.youtube.com/embed/NEW_ID"`)
-   - Prepare a "this becomes that" code sample. Check the render exercises for examples of what this can look like.
-
-9. Commit, push
-10. Add the exercise to the [curriculum doc](https://docs.google.com/document/d/1d9lsiDo8HgcoHu7_ln8QwSaoXbQyJ0l9LJi8k1knNZ0/edit#). Switch to `master` branch and update `README.md` as well.
-11. Do some final QA: try loading the repo into codesandbox, and solve the challenge.
-12. Ask someone else to do QA on your commits. I committed + pushed one error in two exercises which slowed students down a bit. Not the end of the world but we want to avoid that.
+4. Check out the branch containing the last exercise/commit that was added to the repo. **This step is important since, as we add more exercises there are several changes/improvements being made to the core of the project.** Branching from the latest branch/commit will help us maintain and improve this repo.
+5. Create new branch. If for instance you're preparing: a beginner topic > conditional-rendering > Exercise 05, then create a new branch as such: `git checkout -b kodiri/conditional-rendering/05`
+6. Adapt the following elements from Kodiri to our repo:
+   1. On the repo open the `src/index.js`. There you will find a component called `ExerciseDescription` [for example](https://github.com/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/blob/cp%2Fkodiri%2Fbeginner%2Finput%2F05/src/index.js#L28). The component has 4 required properties. Your job will be to update those.
+    * Update the `title`. This will be the title of your exercise, you can find the title in the Kodiri exercise itself, or be creative and improve the Kodiri title.
+    * Update the `description`. This will be the description of your exercise, the description similar to the title can be found on the Kodiri itself.
+    * Update the `youtubeId`. This will update the video of the exercise. You can find the id  on the Kodiri exercise when you right click on the video they include. Please make sure to insert the correct youtube video id. For example `src="https://www.youtube.com/embed/pKQwMjkVwXc"` in this case the id will be `pKQwMjkVwXc`.
+    * Then update the `exerciseFilename`, signifies the file of the exercise (e.g. `Score.js`). With other words is the `js` file that our Component lives.   
+   2. Update the test source code into the unit test file (e.g. `Score.spec.js`). 
+    * Copy from the Kodiri test the test cases they provide and paste it our test file, for instance `Score.spec.js`. Please make sure you only override from line #9 and down (i.e. keep the imports and setup on lines 1-8) since this is the configuration of the testing suite. 
+    * Afterwards, run `npx jest-codemods` to transpile from one unit test format to another. As prompted, select: Which parser do you want to use? `Babel, Which test library would you like to migrate from? Chai: Should/Expect BDD Syntax, Which test library would you like to migrate from? Yes, and I'm not afraid of false positive transformations, Will you be using Jest on Node.js as your test runner? Yes, use the globals provided by Jest (recommended`). Hit Enter.
+7. Commit, push
+8. Add the exercise to the [curriculum doc](https://docs.google.com/document/d/1d9lsiDo8HgcoHu7_ln8QwSaoXbQyJ0l9LJi8k1knNZ0/edit#).
+9. Manually QA your changes: try loading the repo into codesandbox, and solve the challenge you created, also check if the tests are passing after you solved the exercise. We do this in order to avoid students having to solve exercises that might contain errors.
+10. Switch to `master` branch, and from there create a PR with the updated `README.md`. This way someone else can also QA your changes, they can go though your codesandboxes and solve the exercises. Having PRs is a good practise we can follow, to avoid having errors on the exercises during the class.
 
 ## Credits
 
