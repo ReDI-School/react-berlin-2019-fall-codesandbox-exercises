@@ -9,10 +9,8 @@ import './styles.css';
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">
-      🏆
-    </span>{' '}
-    LAST one you made it! Amazing work!
+    Wohoo! Half-way there! Here, have anoter nice quote from Bill Gates:{' '}
+    <em>Your most unhappy customers are your greatest source of learning.</em>
   </Tooltip>
 );
 
