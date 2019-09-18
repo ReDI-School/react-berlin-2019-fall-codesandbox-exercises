@@ -54,11 +54,11 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: State
 
-- 01 (**To be created**)
-- 02 (**To be created**)
-- 03 (**To be created**)
-- 04 (**To be created**)
-- 05 (**To be created**)
+- [State 01: Display a message from the component state](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/state/01)
+- [State 02: Display the average score of a player](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/state/02)
+- [State 03: Display the average score of a player after completing a challenge](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/state/03)
+- [State 04: Perform some math operations](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/state/04)
+- [State 05: Add new element to state](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/state/05)
 
 ### Topic: Input fields
 
