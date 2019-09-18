@@ -9,10 +9,8 @@ import './styles.css';
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">
-      🏆
-    </span>{' '}
-    LAST one you made it! Amazing work!
+    You're getting there! Here's a nice one from Donald Knuth:{' '}
+    <em>If you optimize everything, you will always be unhappy.</em>
   </Tooltip>
 );
 
