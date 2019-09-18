@@ -38,7 +38,7 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="Display the average score of a player"
+        title="02 Display the average score of a player"
         exerciseFilename="AverageScore"
         description={
           <>
