@@ -38,24 +38,24 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="Display the average score of a player"
+        title="Display the average score of a player after completing a challenge"
         exerciseFilename="AverageScore"
         description={
           <>
             <p>
-              We want to know what's the score of a given player.
+              We want to know what's the score of a given player, after
+              completing a challenge.
               <br />
               In that respect, our component will maintain two state properties:
+              <br />- <InlinePre>firstScore</InlinePre>
+              <br />- <InlinePre>secondScore</InlinePre>
               <br />
-              - firstScore
+              Additionally, we also want to incorporate to the calculation the
+              newly obtained score, passed as a new prop to the component,
+              called newScore.
               <br />
-              - secondScore
+              Please display the rounded average score.
               <br />
-              Please display the rounded average score.{' '}
-              <strong>
-                Use <InlinePre>Math.ceil</InlinePre>, not{' '}
-                <InlinePre>Math.floor</InlinePre>
-              </strong>
               <br />
             </p>
             <p>
@@ -75,7 +75,11 @@ function App() {
             <InlinePre>81</InlinePre> to{' '}
             <InlinePre>state.secondScore</InlinePre>
             <br />
-            2) Calculate the average score and display it in the following way:{' '}
+            2) Calculate the average score using the two scores in{' '}
+            <InlinePre>state</InlinePre> as well as a third score provided
+            through a prop named <InlinePre>newScore</InlinePre>
+            <br />
+            3) Display the average score in the following way:{' '}
             <InlinePre>The average score is: {'<average score>'}</InlinePre>
           </>
         }
