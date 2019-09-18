@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import Input from './Input';
+import Salary from './Salary';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,15 +32,27 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Display an input field"
+        title="Display the expected salary of a player"
         youtubeId=""
-        exerciseFilename="Input"
+        exerciseFilename="Salary"
         description={
           <>
             <p>
-              As simple as that. Please display a controlled input field, which means we want to
-              track changes via <code>setState</code>.
+              We want to give our players the opportunity to share, if they want and only with
+              selected stakeholders, what are their professional salary expectations, so they can be
+              contacted with relevant job positions.
             </p>
+            <br />
+            <p>
+              Please create an input field of type number so the user can submit the desired salary.
+            </p>
+            <br />
+
+            <p>
+              If the user submits 28000 as the expected sallary, for example, then we should show a
+              label tag with the following message: Expected salary: £28000
+            </p>
+
             <br />
             <h4>Resources:</h4>
             <a href="https://reactjs.org/docs/forms.html" target="_blank" rel="noopener noreferrer">
@@ -59,7 +71,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Input />
+        <Salary />
       </Panel>
     </>
   );
