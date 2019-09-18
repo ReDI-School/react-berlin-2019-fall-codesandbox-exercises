@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import Salary from './Salary';
+import Input from './Input';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,27 +32,20 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Display the expected salary of a player"
+        title="Clear input with button"
         youtubeId=""
-        exerciseFilename="Salary"
+        exerciseFilename="Input"
         description={
           <>
             <p>
-              We want to give our players the opportunity to share, if they want and only with
-              selected stakeholders, what are their professional salary expectations, so they can be
-              contacted with relevant job positions.
+              We'd like to display an input field with some value on it. Please, initialize the
+              value of the input with the name <b>Charlotte</b>.
             </p>
             <br />
             <p>
-              Please create an input field of type number so the user can submit the desired salary.
+              Apart from that, we want to show a button nearby, to allow resetting the input (that
+              means, to set an empty value on it).
             </p>
-            <br />
-
-            <p>
-              If the user submits 28000 as the expected sallary, for example, then we should show a
-              label tag with the following message: Expected salary: £28000
-            </p>
-
             <br />
             <h4>Resources:</h4>
             <a href="https://reactjs.org/docs/forms.html" target="_blank" rel="noopener noreferrer">
@@ -71,7 +64,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Salary />
+        <Input />
       </Panel>
     </>
   );
