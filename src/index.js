@@ -43,12 +43,13 @@ function App() {
             </p>
             <br />
             <h4>Resources:</h4>
-            <a href="https://reactjs.org/docs/forms.html" target="_blank">
+            <a href="https://reactjs.org/docs/forms.html" target="_blank" rel="noopener noreferrer">
               React Forms
             </a>
             <br />
             <a
               href="https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Get pro with react setState in 10 minutes
