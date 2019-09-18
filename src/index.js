@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import Input from './Input';
+import Email from './Email';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,19 +32,32 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Clear input with button"
+        title="Check if email inputs match"
         youtubeId=""
-        exerciseFilename="Input"
+        exerciseFilename="Email"
         description={
           <>
+            <p>In the old times, registering an email was easy peasy.</p>
+            <br />
             <p>
-              We'd like to display an input field with some value on it. Please, initialize the
-              value of the input with the name <b>Charlotte</b>.
+              Today, however, the majority of the addresses have been already taken, hence it's
+              sometimes challenging to pick -and remember!- a decent one.
+            </p>
+            <br />
+            <p>Please create a 2-input component, to set and review user's email address.</p>
+            <br />
+            <p>
+              The first input field should have the class <b>email</b>
             </p>
             <br />
             <p>
-              Apart from that, we want to show a button nearby, to allow resetting the input (that
-              means, to set an empty value on it).
+              The second input field should have the class <b>confirmEmail</b>
+            </p>
+            <br />
+            <p>
+              If the value of both inputs are equal you should display a label with the following
+              message: <b>Great! Emails match</b> if not the label should have the following
+              message: <b>Oh! Emails do not match!</b>
             </p>
             <br />
             <h4>Resources:</h4>
@@ -64,7 +77,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Input />
+        <Email />
       </Panel>
     </>
   );

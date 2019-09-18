@@ -1,9 +1,9 @@
 import React from 'react';
 
-class Input extends React.Component {
+class Email extends React.Component {
   render() {
     return <div></div>;
   }
 }
 
-export default Input;
+export default Email;
