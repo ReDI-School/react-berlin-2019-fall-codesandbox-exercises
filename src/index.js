@@ -38,7 +38,7 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="Display a message from the component state"
+        title="01 Display a message from the component state"
         exerciseFilename="HelloState"
         description={
           <>
