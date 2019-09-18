@@ -70,14 +70,7 @@ function App() {
             <br />
             2) Take a prop named <InlinePre>c</InlinePre> containing a number.
             <br />
-            3){' '}
-            <strong>
-              After the componented has <em>mounted</em>
-            </strong>
-            , calculate the total and put it into{' '}
-            <InlinePre>state.total</InlinePre>
-            <br />
-            4) Sum a, b and c, and display the total as such:{' '}
+            3) Sum a, b and c, and display the total as such:{' '}
             <InlinePre>{'The total is: <total>'}</InlinePre>
           </>
         }
