@@ -46,7 +46,7 @@ Click the below links to load a specific branch from this repository into codesa
 
 - [Input 01: Display a basic input text](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/01)
 - [Input 02: Display an input text with dynamic data](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/02)
-- [Input 03: Display a textarea wi<!-- t -->h dynamic data](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/03)
+- [Input 03: Display a textarea with dynamic data](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/03)
 - [Input 04: Display checkboxes on a sign up form](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/04)
 - [Input 05: Display a combo to select a piece of fruit](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/cp/kodiri/beginner/input/05)
 
