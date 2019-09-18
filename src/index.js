@@ -75,7 +75,8 @@ function App() {
             <InlinePre>81</InlinePre> to{' '}
             <InlinePre>state.secondScore</InlinePre>
             <br />
-            2) Calculate the average score and display it.
+            2) Calculate the average score and display it in the following way:{' '}
+            <InlinePre>The average score is: {'<average score>'}</InlinePre>
           </>
         }
       />
