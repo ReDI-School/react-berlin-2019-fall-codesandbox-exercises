@@ -1,29 +1,44 @@
-import React from "react";
-import { Panel } from "rsuite";
-import PropTypes from "prop-types";
+import React from 'react';
+import { Panel } from 'rsuite';
+import PropTypes from 'prop-types';
 
 function ExerciseDescription({
+  exerciseLevel,
+  exerciseTopic,
   title,
   description,
+  requirements,
   youtubeId,
-  exerciseFilename
+  exerciseFilename,
 }) {
   return (
     <>
       <Panel
-        header={`Kodiri / Beginer / Input / ${title}`}
+        header={`Kodiri / ${exerciseLevel} / ${exerciseTopic} / ${title}`}
         collapsible
         bordered
       >
         <h4>{title}</h4>
         {description}
         <br />
-        <h4 style={{ marginBottom: 8 }}>Video</h4>
-        <iframe
-          title="youtubeVideo"
-          src={`https://www.youtube.com/embed/${youtubeId}`}
-          allow="autoplay; encrypted-media"
-        />
+        {youtubeId && (
+          <>
+            <h4 style={{ marginBottom: 8 }}>Video</h4>
+            <iframe
+              title="youtubeVideo"
+              src={`https://www.youtube.com/embed/${youtubeId}`}
+              allow="autoplay; encrypted-media"
+            />{' '}
+          </>
+        )}
+        {requirements && (
+          <>
+            <h4>Requirements/hints</h4>
+            {requirements}
+            <br />
+            <br />
+          </>
+        )}
 
         <h4>Instructions</h4>
         <p>
@@ -44,10 +59,11 @@ function ExerciseDescription({
   );
 }
 ExerciseDescription.propTypes = {
-  description: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+    .isRequired,
   exerciseFilename: PropTypes.string,
   title: PropTypes.string,
-  youtubeId: PropTypes.string
+  youtubeId: PropTypes.string,
 };
 
 export default ExerciseDescription;
