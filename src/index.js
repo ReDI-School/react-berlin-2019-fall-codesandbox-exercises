@@ -9,10 +9,8 @@ import './styles.css';
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">
-      🏆
-    </span>{' '}
-    LAST one you made it! Amazing work!
+    Keep it up! Here a nice quote from Bill Gates:{' '}
+    <em>The computer was born to solve problems that did not exist before.</em>.
   </Tooltip>
 );
 
