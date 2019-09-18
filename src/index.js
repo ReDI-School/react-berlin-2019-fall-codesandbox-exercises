@@ -9,10 +9,11 @@ import './styles.css';
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">
-      🏆
-    </span>{' '}
-    LAST one you made it! Amazing work!
+    Amazing!!! Enjoy this quote!{' '}
+    <em>
+      The purpose of software engineering is to control complexity, not to
+      create it.
+    </em>
   </Tooltip>
 );
 
