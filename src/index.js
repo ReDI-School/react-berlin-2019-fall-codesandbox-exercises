@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import HelloState from './HelloState';
+import AverageScore from './AverageScore';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -38,23 +38,25 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="Display a message from the component state"
-        exerciseFilename="HelloState"
+        title="Display the average score of a player"
+        exerciseFilename="AverageScore"
         description={
           <>
             <p>
-              Let's play with the state!
+              We want to know what's the score of a given player.
               <br />
-              This mechanism is vital in React towards maintaining your UI up to
-              date.
+              In that respect, our component will maintain two state properties:
               <br />
-              The requested steps are:
+              - firstScore
               <br />
-              1) Create a state as part of the constructor method (don't forget
-              to invoke super!
+              - secondScore
               <br />
-              2) Display the created property of the state into the render
-              method
+              Please display the rounded average score.{' '}
+              <strong>
+                Use <InlinePre>Math.ceil</InlinePre>, not{' '}
+                <InlinePre>Math.floor</InlinePre>
+              </strong>
+              <br />
             </p>
             <p>
               <em>
@@ -68,17 +70,18 @@ function App() {
         }
         requirements={
           <>
-            1) Make <InlinePre>state.message</InlinePre> contain the string{' '}
-            <InlinePre>Hello state!</InlinePre>
+            1) Assign <InlinePre>78</InlinePre> to{' '}
+            <InlinePre>state.firstScore</InlinePre> and{' '}
+            <InlinePre>81</InlinePre> to{' '}
+            <InlinePre>state.secondScore</InlinePre>
             <br />
-            2) Display the contents of <InlinePre>state.message</InlinePre> in
-            the <strong>HelloState</strong> component.
+            2) Calculate the average score and display it.
           </>
         }
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <HelloState />
+        <AverageScore />
       </Panel>
     </>
   );

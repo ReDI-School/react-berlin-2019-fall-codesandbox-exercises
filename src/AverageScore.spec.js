@@ -5,11 +5,13 @@ import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new Adapter() });
 
-it('AverageScore displays a message from the state', () => {
+it('AverageScore display the rounded score of a player', () => {
   //when
   const wrapper = shallow(<AverageScore />);
+  const state = wrapper.state();
 
   //then
-  expect(wrapper.state().message).toBe('Hello state!');
-  expect(wrapper.text()).toBe('Hello state!');
+  expect(state.firstScore).to.equal(78);
+  expect(state.secondScore).to.equal(81);
+  expect(wrapper.text()).to.equal('The average score is: 80');
 });
