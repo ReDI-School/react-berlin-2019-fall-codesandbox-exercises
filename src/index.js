@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import AverageScore from './AverageScore';
+import Calc from './Calc';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -38,23 +38,19 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="Display the average score of a player after completing a challenge"
-        exerciseFilename="AverageScore"
+        title="04 Perform some math operations"
+        exerciseFilename="Calc"
         description={
           <>
             <p>
-              We want to know what's the score of a given player, after
-              completing a challenge.
+              We have a component with a couple of state props on it,{' '}
+              <InlinePre>a</InlinePre> & <InlinePre>b</InlinePre>
               <br />
-              In that respect, our component will maintain two state properties:
-              <br />- <InlinePre>firstScore</InlinePre>
-              <br />- <InlinePre>secondScore</InlinePre>
+              We're also passing a prop, <InlinePre>operation</InlinePre>, to
+              decide whether we want to add or subtract them.
               <br />
-              Additionally, we also want to incorporate to the calculation the
-              newly obtained score, passed as a new prop to the component,
-              called newScore.
-              <br />
-              Please display the rounded average score.
+              We'd also like to display an error if the passed operation is not
+              supported yet.
               <br />
               <br />
             </p>
@@ -70,23 +66,28 @@ function App() {
         }
         requirements={
           <>
-            1) Assign <InlinePre>78</InlinePre> to{' '}
-            <InlinePre>state.firstScore</InlinePre> and{' '}
-            <InlinePre>81</InlinePre> to{' '}
-            <InlinePre>state.secondScore</InlinePre>
+            1) Assign <InlinePre>7</InlinePre> to <InlinePre>state.a</InlinePre>{' '}
+            and <InlinePre>4</InlinePre> to <InlinePre>state.b</InlinePre>
             <br />
-            2) Calculate the average score using the two scores in{' '}
+            2) Take a prop named <InlinePre>operation</InlinePre> which can be{' '}
+            <InlinePre>"add"</InlinePre> or <InlinePre>"subtract"</InlinePre>
+            <br />
+            3) Perform and display the appropriate calculation as such:{' '}
+            <InlinePre>{'The result is: <result>'}</InlinePre>
+            <br />
+            4) If an invalid <InlinePre>operation</InlinePre> is passed, display
+            this error message:{' '}
+            <InlinePre>This operation is not supported yet!</InlinePre>
+            value is passed to <InlinePre>operation</InlinePre>, display 2)
+            Calculate the average score using the two scores in{' '}
             <InlinePre>state</InlinePre> as well as a third score provided
             through a prop named <InlinePre>newScore</InlinePre>
-            <br />
-            3) Display the average score in the following way:{' '}
-            <InlinePre>The average score is: {'<average score>'}</InlinePre>
           </>
         }
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <AverageScore />
+        <Calc />
       </Panel>
     </>
   );
