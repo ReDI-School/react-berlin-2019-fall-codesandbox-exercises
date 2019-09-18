@@ -62,11 +62,11 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: Input fields
 
-- 01 (**To be created**)
-- 02 (**To be created**)
-- 03 (**To be created**)
-- 04 (**To be created**)
-- 05 (**To be created**)
+- [Input 01: Display an input field](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/input/01)
+- [Input 02: Display the expected salary of a player](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/input/02)
+- [Input 03: Clear input with button](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/input/03)
+- [Input 04: Check if email inputs match](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/input/04)
+- [Input 05: Pick a piece of fruit!](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/input/05)
 
 ### Topic: Buttons
 
@@ -135,13 +135,13 @@ Click the below links to load a specific branch from this repository into codesa
 5. Create new branch. If for instance you're preparing: a beginner topic > conditional-rendering > Exercise 05, then create a new branch as such: `git checkout -b kodiri/conditional-rendering/05`
 6. Adapt the following elements from Kodiri to our repo:
    1. On the repo open the `src/index.js`. There you will find a component called `ExerciseDescription` [for example](https://github.com/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/blob/cp%2Fkodiri%2Fbeginner%2Finput%2F05/src/index.js#L28). The component has 4 required properties. Your job will be to update those.
-    * Update the `title`. This will be the title of your exercise, you can find the title in the Kodiri exercise itself, or be creative and improve the Kodiri title.
-    * Update the `description`. This will be the description of your exercise, the description similar to the title can be found on the Kodiri itself.
-    * Update the `youtubeId`. This will update the video of the exercise. You can find the id  on the Kodiri exercise when you right click on the video they include. Please make sure to insert the correct youtube video id. For example `src="https://www.youtube.com/embed/pKQwMjkVwXc"` in this case the id will be `pKQwMjkVwXc`.
-    * Then update the `exerciseFilename`, signifies the file of the exercise (e.g. `Score.js`). With other words is the `js` file that our Component lives.   
-   2. Update the test source code into the unit test file (e.g. `Score.spec.js`). 
-    * Copy from the Kodiri test the test cases they provide and paste it our test file, for instance `Score.spec.js`. Please make sure you only override from line #9 and down (i.e. keep the imports and setup on lines 1-8) since this is the configuration of the testing suite. 
-    * Afterwards, run `npx jest-codemods` to transpile from one unit test format to another. As prompted, select: Which parser do you want to use? `Babel, Which test library would you like to migrate from? Chai: Should/Expect BDD Syntax, Which test library would you like to migrate from? Yes, and I'm not afraid of false positive transformations, Will you be using Jest on Node.js as your test runner? Yes, use the globals provided by Jest (recommended`). Hit Enter.
+   - Update the `title`. This will be the title of your exercise, you can find the title in the Kodiri exercise itself, or be creative and improve the Kodiri title.
+   - Update the `description`. This will be the description of your exercise, the description similar to the title can be found on the Kodiri itself.
+   - Update the `youtubeId`. This will update the video of the exercise. You can find the id on the Kodiri exercise when you right click on the video they include. Please make sure to insert the correct youtube video id. For example `src="https://www.youtube.com/embed/pKQwMjkVwXc"` in this case the id will be `pKQwMjkVwXc`.
+   - Then update the `exerciseFilename`, signifies the file of the exercise (e.g. `Score.js`). With other words is the `js` file that our Component lives.
+   2. Update the test source code into the unit test file (e.g. `Score.spec.js`).
+   - Copy from the Kodiri test the test cases they provide and paste it our test file, for instance `Score.spec.js`. Please make sure you only override from line #9 and down (i.e. keep the imports and setup on lines 1-8) since this is the configuration of the testing suite.
+   - Afterwards, run `npx jest-codemods` to transpile from one unit test format to another. As prompted, select: Which parser do you want to use? `Babel, Which test library would you like to migrate from? Chai: Should/Expect BDD Syntax, Which test library would you like to migrate from? Yes, and I'm not afraid of false positive transformations, Will you be using Jest on Node.js as your test runner? Yes, use the globals provided by Jest (recommended`). Hit Enter.
 7. Commit, push
 8. Add the exercise to the [curriculum doc](https://docs.google.com/document/d/1d9lsiDo8HgcoHu7_ln8QwSaoXbQyJ0l9LJi8k1knNZ0/edit#).
 9. Manually QA your changes: try loading the repo into codesandbox, and solve the challenge you created, also check if the tests are passing after you solved the exercise. We do this in order to avoid students having to solve exercises that might contain errors.
