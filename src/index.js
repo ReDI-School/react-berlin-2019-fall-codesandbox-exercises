@@ -1,49 +1,68 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import ExerciseDescription from "./ExerciseDescription";
-import FruitPicker from "./FruitPicker";
-import { Panel, Tooltip, Whisper } from "rsuite";
-import "rsuite/dist/styles/rsuite-default.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ExerciseDescription from './ExerciseDescription';
+import Input from './Input';
+import { Panel, Tooltip, Whisper } from 'rsuite';
+import 'rsuite/dist/styles/rsuite-default.css';
 
-import "./styles.css";
+import './styles.css';
 
 const tooltipMessage = (
   <Tooltip>
-    <span role="img" aria-label="good job">🏆</span> LAST one you made it! Amazing work!
+    <span role="img" aria-label="good job">
+      🏆
+    </span>{' '}
+    You are killing it!
   </Tooltip>
 );
 
-const PanelHeader = () =>(
+const PanelHeader = () => (
   <h3>
     Solution
     <Whisper placement="top" trigger="hover" speaker={tooltipMessage}>
-        <span role="img" aria-label="gun"> 🔫</span>
+      <span role="img" aria-label="gun">
+        {' '}
+        🔫
+      </span>
     </Whisper>
   </h3>
-)
+);
 
 function App() {
   return (
     <>
       <ExerciseDescription
-        title="Display a combo to select a piece of fruit"
-        youtubeId="QNnUXFDP70M"
-        exerciseFilename="FruitPicker"
+        title="Display an input field"
+        youtubeId=""
+        exerciseFilename="Input"
         description={
-          <p>
-            As part of our new diet, our nutritionist has suggested us to eat more fruit, unsurprisingly. She's particularly interested on apples and oranges.
-            <br/>
-            Let's display a dropdown to pick a piece of fruit, with the ability of showing a different default element each time.
-          </p>
+          <>
+            <p>
+              As simple as that. Please display a controlled input field, which means we want to
+              track changes via <code>setState</code>.
+            </p>
+            <br />
+            <h4>Resources:</h4>
+            <a href="https://reactjs.org/docs/forms.html" target="_blank">
+              React Forms
+            </a>
+            <br />
+            <a
+              href="https://www.freecodecamp.org/news/get-pro-with-react-setstate-in-10-minutes-d38251d1c781/"
+              target="_blank"
+            >
+              Get pro with react setState in 10 minutes
+            </a>
+          </>
         }
       />
 
-      <Panel header={<PanelHeader/>} bordered>
-        <FruitPicker selected='Apple' />
+      <Panel header={<PanelHeader />} bordered>
+        <Input />
       </Panel>
     </>
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
