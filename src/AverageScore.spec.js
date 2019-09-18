@@ -11,7 +11,7 @@ it('AverageScore display the rounded score of a player', () => {
   const state = wrapper.state();
 
   //then
-  expect(state.firstScore).to.equal(78);
-  expect(state.secondScore).to.equal(81);
-  expect(wrapper.text()).to.equal('The average score is: 73');
+  expect(state.firstScore).toBe(78);
+  expect(state.secondScore).toBe(81);
+  expect(wrapper.text()).toBe('The average score is: 73');
 });
