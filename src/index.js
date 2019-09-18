@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import Email from './Email';
+import FruitPicker from './FruitPicker';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,32 +32,30 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Check if email inputs match"
+        title="Pick a piece of fruit!"
         youtubeId=""
-        exerciseFilename="Email"
+        exerciseFilename="FruitPicker"
         description={
           <>
-            <p>In the old times, registering an email was easy peasy.</p>
-            <br />
+            <p>One apple a day keeps the doctor away.</p>
+
             <p>
-              Today, however, the majority of the addresses have been already taken, hence it's
-              sometimes challenging to pick -and remember!- a decent one.
+              We'd like to create an online platform to give them the chance to select which type of
+              fruit do they want to pick each time.
+            </p>
+
+            <p>
+              Please create a <b>select</b> element with two options: <b>Apple</b> and <b>Orange</b>
+              . The FruitPicker component should be able to accept a prop called <b>selected</b> to
+              accept the initial selected fruit and it should be Apple. For example:
             </p>
             <br />
-            <p>Please create a 2-input component, to set and review user's email address.</p>
+            <code>{`<FruitPicker selected="Apple" />`}</code>
+            <br />
             <br />
             <p>
-              The first input field should have the class <b>email</b>
-            </p>
-            <br />
-            <p>
-              The second input field should have the class <b>confirmEmail</b>
-            </p>
-            <br />
-            <p>
-              If the value of both inputs are equal you should display a label with the following
-              message: <b>Great! Emails match</b> if not the label should have the following
-              message: <b>Oh! Emails do not match!</b>
+              The user should be able to pick a different fruit and update the state of the
+              component with the new fruit selected.
             </p>
             <br />
             <h4>Resources:</h4>
@@ -77,7 +75,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Email />
+        <FruitPicker />
       </Panel>
     </>
   );
