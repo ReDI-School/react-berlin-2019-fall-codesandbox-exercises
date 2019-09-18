@@ -38,19 +38,18 @@ function App() {
       <ExerciseDescription
         exerciseLevel="Intermediate"
         exerciseTopic="State"
-        title="04 Perform some math operations"
+        title="05 Add new element to state"
         exerciseFilename="Calc"
         description={
           <>
             <p>
-              We have a component with a couple of state props on it,{' '}
-              <InlinePre>a</InlinePre> & <InlinePre>b</InlinePre>
+              We have a component with two state numbers,{' '}
+              <InlinePre>a</InlinePre> and <InlinePre>b</InlinePre>. We're also
+              providing a third one as a prop, <InlinePre>c</InlinePre>.
               <br />
-              We're also passing a prop, <InlinePre>operation</InlinePre>, to
-              decide whether we want to add or subtract them.
-              <br />
-              We'd also like to display an error if the passed operation is not
-              supported yet.
+              We'd like to add a new state number, <InlinePre>total</InlinePre>,
+              with the result of adding them all (<InlinePre>a</InlinePre> +{' '}
+              <InlinePre>b</InlinePre> + <InlinePre>c</InlinePre>).
               <br />
               <br />
             </p>
@@ -69,25 +68,23 @@ function App() {
             1) Assign <InlinePre>7</InlinePre> to <InlinePre>state.a</InlinePre>{' '}
             and <InlinePre>4</InlinePre> to <InlinePre>state.b</InlinePre>
             <br />
-            2) Take a prop named <InlinePre>operation</InlinePre> which can be{' '}
-            <InlinePre>"add"</InlinePre> or <InlinePre>"subtract"</InlinePre>
+            2) Take a prop named <InlinePre>c</InlinePre> containing a number.
             <br />
-            3) Perform and display the appropriate calculation as such:{' '}
-            <InlinePre>{'The result is: <result>'}</InlinePre>
+            3){' '}
+            <strong>
+              After the componented has <em>mounted</em>
+            </strong>
+            , calculate the total and put it into{' '}
+            <InlinePre>state.total</InlinePre>
             <br />
-            4) If an invalid <InlinePre>operation</InlinePre> is passed, display
-            this error message:{' '}
-            <InlinePre>This operation is not supported yet!</InlinePre>
-            value is passed to <InlinePre>operation</InlinePre>, display 2)
-            Calculate the average score using the two scores in{' '}
-            <InlinePre>state</InlinePre> as well as a third score provided
-            through a prop named <InlinePre>newScore</InlinePre>
+            4) Sum a, b and c, and display the total as such:{' '}
+            <InlinePre>{'The total is: <total>'}</InlinePre>
           </>
         }
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Calc />
+        <Calc c={5} />
       </Panel>
     </>
   );

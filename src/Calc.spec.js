@@ -7,29 +7,27 @@ Enzyme.configure({ adapter: new Adapter() });
 
 [
   {
-    it: `Adds the numbers if the 'add' operation is passed`,
-    operation: 'add',
-    expected: 'The result is: 11',
+    it: 'Displays total=16 when a=7, b=4, c=5',
+    c: 5,
+    total: 16,
+    expected: 'The total is: 16',
   },
   {
-    it: `Subtracts the numbers if the 'subtract' operation is passed`,
-    operation: 'subtract',
-    expected: 'The result is: 3',
-  },
-  {
-    it: 'Displays an error if the passed operation is not supported',
-    operation: 'multiply',
-    expected: 'This operation is not supported yet!',
+    it: 'Displays total=9 when a=7, b=4, c=-2',
+    c: -2,
+    total: 9,
+    expected: 'The total is: 9',
   },
 ].forEach(scenario => {
   it(scenario.it, () => {
     //when
-    const wrapper = shallow(<Calc operation={scenario.operation} />);
+    const wrapper = shallow(<Calc c={scenario.c} />);
     const state = wrapper.state();
 
     //then
     expect(state.a).toBe(7);
     expect(state.b).toBe(4);
+    expect(state.total).toBe(scenario.total);
     expect(wrapper.text()).toBe(scenario.expected);
   });
 });
