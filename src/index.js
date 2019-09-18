@@ -86,7 +86,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <AverageScore />
+        <AverageScore newScore={100} />
       </Panel>
     </>
   );
