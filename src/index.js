@@ -87,7 +87,12 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <Calc />
+        <p>
+          <Calc operation="add" />
+        </p>
+        <p>
+          <Calc operation="subtract" />
+        </p>
       </Panel>
     </>
   );
