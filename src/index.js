@@ -51,12 +51,7 @@ function App() {
               <br />
               - secondScore
               <br />
-              Please display the rounded average score.{' '}
-              <strong>
-                Use <InlinePre>Math.ceil</InlinePre>, not{' '}
-                <InlinePre>Math.floor</InlinePre>
-              </strong>
-              <br />
+              Please display the rounded average score. <br />
             </p>
             <p>
               <em>
