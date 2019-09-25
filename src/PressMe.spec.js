@@ -12,12 +12,12 @@ it('PressMe checks whether the button has been pressed or not', () => {
   const getMessage = () => wrapper.find('label');
 
   //then
-  expect(getPressMeButton().text()).to.equal('Press me!');
-  expect(getMessage().text()).to.equal('Button not pressed yet');
+  expect(getPressMeButton().text()).toBe('Press me!');
+  expect(getMessage().text()).toBe('Button not pressed yet');
 
   //when
   getPressMeButton().simulate('click');
 
   //then
-  expect(getMessage().text()).to.equal('Button already pressed!');
+  expect(getMessage().text()).toBe('Button already pressed!');
 });
