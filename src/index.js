@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import FruitPicker from './FruitPicker';
+import PressMe from './PressMe';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,35 +32,33 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Pick a piece of fruit!"
+        title="Dynamic Button!"
         youtubeId=""
-        exerciseFilename="FruitPicker"
+        exerciseFilename="PressMe"
         description={
           <>
-            <p>One apple a day keeps the doctor away.</p>
-
             <p>
-              We'd like to create an online platform to give them the chance to select which type of
-              fruit do they want to pick each time.
+              We simply want to create a component with a single button on it,
+              so its text will reflect whether it's been pressed at least once
+              or not.
             </p>
 
             <p>
-              Please create a <b>select</b> element with two options: <b>Apple</b> and <b>Orange</b>
-              . The FruitPicker component should be able to accept a prop called <b>selected</b> to
-              accept the initial selected fruit and it should be Apple. For example:
-            </p>
-            <br />
-            <code>{`<FruitPicker selected="Apple" />`}</code>
-            <br />
-            <br />
-            <p>
-              The user should be able to pick a different fruit and update the state of the
-              component with the new fruit selected.
+              Please create a Component that has both a <b>button</b> and a{' '}
+              <b>label</b> element. The <b>button</b> should have the text
+              "Press me!" (without the quotes). The <b>label</b> element should
+              initially have the text "Button not pressed yet". Once the button
+              has been pressed the text should change to "Button already
+              pressed!"
             </p>
             <br />
             <h4>Resources:</h4>
-            <a href="https://reactjs.org/docs/forms.html" target="_blank" rel="noopener noreferrer">
-              React Forms
+            <a
+              href="https://reactjs.org/docs/handling-events.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Handling Events
             </a>
             <br />
             <a
@@ -70,12 +68,19 @@ function App() {
             >
               Get pro with react setState in 10 minutes
             </a>
+            <a
+              href="https://reactjs.org/docs/react-component.html#setstate"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              setState API documentation
+            </a>
           </>
         }
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <FruitPicker />
+        <PressMe />
       </Panel>
     </>
   );
