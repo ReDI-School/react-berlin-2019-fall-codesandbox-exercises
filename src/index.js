@@ -80,10 +80,10 @@ function App() {
 
       <Panel header={<PanelHeader />} bordered>
         <Movies
-          list={
-            ({ title: 'Wonder Woman', year: 2017, director: 'Patty Jenkins' },
-            { title: 'Black Panther', year: 2018, director: 'Ryan Coogler' })
-          }
+          list={[
+            { title: 'Wonder Woman', year: 2017, director: 'Patty Jenkins' },
+            { title: 'Black Panther', year: 2018, director: 'Ryan Coogler' }
+          ]}
         />
       </Panel>
     </>
