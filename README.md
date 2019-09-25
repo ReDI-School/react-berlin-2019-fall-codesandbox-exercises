@@ -78,8 +78,8 @@ Click the below links to load a specific branch from this repository into codesa
 
 ### Topic: Lists
 
-- 01 (**To be created**)
-- 02 (**To be created**)
+- [Lists 01: Display a list of movies](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/lists/01)
+- [Lists 02: Display a list of female tennis players](https://codesandbox.io/s/github/ReDI-School/react-berlin-2019-fall-codesandbox-exercises/tree/kodiri/intermediate/lists/02)
 - 03 (**To be created**)
 - 04 (**To be created**)
 - 05 (**To be created**)
