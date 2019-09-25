@@ -12,19 +12,19 @@ it('DriverDetails toggles driver stats', () => {
   const getDetails = () => wrapper.find('label.details');
 
   //then
-  expect(getPressMeButton().text()).to.equal('Toggle driver details');
-  expect(getDetails().exists()).to.equal(false);
+  expect(getPressMeButton().text()).toBe('Toggle driver details');
+  expect(getDetails().exists()).toBe(false);
 
   //when
   getPressMeButton().simulate('click');
 
   //then
-  expect(getDetails().exists()).to.equal(true);
-  expect(getDetails().text()).to.equal('Races: 314, Titles: 2, Poles: 22');
+  expect(getDetails().exists()).toBe(true);
+  expect(getDetails().text()).toBe('Races: 314, Titles: 2, Poles: 22');
 
   //when
   getPressMeButton().simulate('click');
 
   //then
-  expect(getDetails().exists()).to.equal(false);
+  expect(getDetails().exists()).toBe(false);
 });
