@@ -12,7 +12,7 @@ const tooltipMessage = (
     <span role="img" aria-label="good job">
       🏆
     </span>{' '}
-    You are killing it!
+    You're on a marathon - keep running!
   </Tooltip>
 );
 
@@ -86,7 +86,12 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <FemalePlayers />
+        <FemalePlayers
+          list={[
+            { name: 'Federer', gender: 'M' },
+            { name: 'Osaka', gender: 'F' }
+          ]}
+        />
       </Panel>
     </>
   );
