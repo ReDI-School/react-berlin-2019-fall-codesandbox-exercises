@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ExerciseDescription from './ExerciseDescription';
-import PressMe from './PressMe';
+import DriverDetails from './DriverDetails';
 import { Panel, Tooltip, Whisper } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
 
@@ -32,24 +32,24 @@ function App() {
   return (
     <>
       <ExerciseDescription
-        title="Dynamic Button!"
+        title="Toggle driver details!"
         youtubeId=""
-        exerciseFilename="PressMe"
+        exerciseFilename="DriverDetails"
         description={
           <>
             <p>
-              We simply want to create a component with a single button on it,
-              so its text will reflect whether it's been pressed at least once
-              or not.
+              We are creating a racing database, and we'd like to toggle the
+              details of a given driver when clicking on a button near to
+              his/her name.
             </p>
 
             <p>
-              Please create a Component that has both a <b>button</b> and a{' '}
-              <b>label</b> element. The <b>button</b> should have the text
-              "Press me!" (without the quotes). The <b>label</b> element should
-              initially have the text "Button not pressed yet". Once the button
-              has been pressed the text should change to "Button already
-              pressed!"
+              Please create a Component that has a <b>button</b> with the text
+              "Toggle driver details" (without the quotes). Once clicked a{' '}
+              <b>label</b> element with the className "details" and the text
+              "Races: 314, Titles: 2, Poles: 22" should be rendered. If the
+              button is pressed again it should be hidden again. If it's pressed
+              a third time, it should be shown again. And so on...
             </p>
             <br />
             <h4>Resources:</h4>
@@ -80,7 +80,7 @@ function App() {
       />
 
       <Panel header={<PanelHeader />} bordered>
-        <PressMe />
+        <DriverDetails />
       </Panel>
     </>
   );
