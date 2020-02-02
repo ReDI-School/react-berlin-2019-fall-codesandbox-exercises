@@ -1,26 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import ExerciseDescription from './ExerciseDescription';
-import ChallengeResults from './ChallengeResults';
-
-import './styles.css';
+import {ExerciseDescription, SolutionArea, conditionalRendering, GlobalStyles} from 'react-exercises-ui'
+import ChallengeResults from "./ChallengeResults";
 
 function App() {
   return (
     <>
-      <div className="App">
-        <ExerciseDescription
-          level="Beginner"
-          topic="Conditional Rendering"
-          exerciseNumber="3"
-          title="Evaluate challenge results"
-          exerciseComponentName="ChallengeResults"
-        />
-      </div>
-
-      <hr />
-      <ChallengeResults scores={[34, 54, 34, 23]} />
+      <GlobalStyles/>
+      <ExerciseDescription {...conditionalRendering.ex03}/>
+      <SolutionArea component={<ChallengeResults scores={[34, 54, 34, 23]} />} />
     </>
   );
 }
