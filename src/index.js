@@ -1,26 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import ExerciseDescription from './ExerciseDescription';
+import {ExerciseDescription, SolutionArea, conditionalRendering, GlobalStyles} from 'react-exercises-ui'
 import BuyTickets from './BuyTickets';
-
-import './styles.css';
 
 function App() {
   let user = { name: 'Anthony', age: 16 };
   return (
     <>
-      <div className="App">
-        <ExerciseDescription
-          level="Beginner"
-          topic="Conditional Rendering"
-          exerciseNumber="2"
-          title="Creating a ticketing system"
-          exerciseComponentName="BuyTickets"
-        />
-      </div>
-
-      <hr />
+      <GlobalStyles/>
+      <ExerciseDescription {...conditionalRendering.ex02} />
+      <SolutionArea component={<BuyTickets user={user} />}/>
       <BuyTickets user={user} />
     </>
   );
