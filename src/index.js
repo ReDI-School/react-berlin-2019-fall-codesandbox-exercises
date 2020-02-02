@@ -1,26 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import {ExerciseDescription, SolutionArea, props, GlobalStyles} from 'react-exercises-ui'
 import President from './President';
-import ExerciseDescription from './ExerciseDescription';
-
-import './styles.css';
 
 function App() {
   return (
     <>
-      <div className="App">
-        <ExerciseDescription
-          level="Beginner"
-          topic="Props"
-          exerciseNumber="2"
-          title="Display details of US presidents"
-          exerciseComponentName="President"
-        />
-      </div>
-
-      <hr />
-      <President />
+      <GlobalStyles />
+      <ExerciseDescription {...props.ex02} />
+      <SolutionArea component={<President />}/>
     </>
   );
 }
