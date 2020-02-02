@@ -1,26 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import ExerciseDescription from './ExerciseDescription';
+import {ExerciseDescription, SolutionArea, props, GlobalStyles} from 'react-exercises-ui'
 import Welcome from './Welcome';
-
-import './styles.css';
 
 function App() {
   return (
     <>
-      <div className="App">
-        <ExerciseDescription
-          level="Beginner"
-          topic="Props"
-          exerciseNumber="1"
-          title="Welcome a given user"
-          exerciseComponentName="Welcome"
-        />
-      </div>
-
-      <hr />
-      <Welcome />
+      <GlobalStyles />
+      <ExerciseDescription {...props.ex01}/>
+      <SolutionArea component={<Welcome />}/>
     </>
   );
 }
